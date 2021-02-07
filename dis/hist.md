@@ -19,3 +19,5 @@ plt.show()
 以下是我的个人数据
 
 ![](https://github.com/sherlcok314159/data_visualization/blob/main/Images/hist.png)
+
+可见*bins*越大，那么**细分的程度越高**
