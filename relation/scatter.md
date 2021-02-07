@@ -39,6 +39,11 @@ plt.show()
 ```python
 import numpy as np 
 print(np.corrcoef(x,y))
+#[[1. 1.]
+# [1. 1.]]
+# 因为值是重复出现的，所以一对就行了
+print(np.corrcoef(x, y)[0])
+#[[1. 1.]
 ```
 - *0-0.09 无相关*
 - *0.1-0.3 弱相关*
