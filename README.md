@@ -12,3 +12,7 @@
 - [直方图](dis/hist.md)
 - [箱型图](dis/box.md)
 - [提琴图](dis/violin.md)
+
+*2.数据关系*
+
+- [散点图](relation/scatter.md)
