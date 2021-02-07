@@ -12,7 +12,7 @@ plt.title('总标题')
 plt.show()
 ```
 
-相对来讲箱型图比直方图更加直观一点
+![](https://github.com/sherlcok314159/data_process/blob/main/Images/box.jpg)
 
 *注意*
 
