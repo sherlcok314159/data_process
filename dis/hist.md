@@ -20,4 +20,8 @@ plt.show()
 
 ![](https://github.com/sherlcok314159/data_visualization/blob/main/Images/hist.png)
 
-可见*bins*越大，那么**细分的程度越高**
+可见*bins*越大，那么**细分的程度越高**，然而细分到一定程度，单个条柱的高度则**易受采样误差的影响**，容易被**噪音干扰**
+
+所以个人意见是
+
+***在一定范围内尝试更改bins,保证在精细化的前提不会太容易受到噪音干扰***
