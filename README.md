@@ -3,7 +3,8 @@
 
 **A.数据读入**
 
-- [读入](read/rd.md)
+- [csv&tsv](read/csv.md)
+- [json](read/json.md)
 
 **B.数据可视化**
 
