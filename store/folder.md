@@ -6,7 +6,7 @@
 ```python
 import os
 #如果路径不存在该文件
-if os.path.exists("Images"):
+if not os.path.exists("Images"):
     os.mkdirs("Images") 
 #嵌套文件
 
