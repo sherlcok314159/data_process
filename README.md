@@ -19,6 +19,9 @@
 - [散点图](relation/scatter.md)
 
 
+*3.计数*
+- [计数](Count/count.md)
+
 *5.数据存储*
 - [创建文件夹](store/folder.md)
 
