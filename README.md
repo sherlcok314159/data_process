@@ -27,5 +27,6 @@
 
 *6.额外须知*
 
-- [字符串格式化](str/format.md)
-- [正则表达式](str/re.md)
+- [制造标签](extra/labels.md)
+- [字符串格式化](extra/format.md)
+- [正则表达式](extra/re.md)
