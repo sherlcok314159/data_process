@@ -16,3 +16,7 @@
 *2.数据关系*
 
 - [散点图](relation/scatter.md)
+
+
+*5.数据存储*
+- [创建文件夹](store/folder.md)
