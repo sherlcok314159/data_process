@@ -1,5 +1,6 @@
 ### 直方图
 
+*A.matplotlib——普通直方图*
 ```python
 import matplotlib.pyplot as plt
 
@@ -25,3 +26,18 @@ plt.show()
 所以个人意见是
 
 ***在一定范围内尝试更改bins,保证在精细化的前提不会太容易受到噪音干扰***
+
+*B.sns-displot——带拟合曲线的直方图*
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.displot(d["Total"],kde = True,bins = 50)
+#kde就是拟合曲线的设置
+#bins参数与上面一致
+plt.show()
+```
+
+关于直方图，默认*x轴*为数据，*y轴*默认为*计数*
+
+**拟合曲线**可以较精确地反映整个直方图的趋势
