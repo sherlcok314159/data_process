@@ -1,5 +1,7 @@
 ### 直方图
 
+关于直方图，默认*x轴*为数据，*y轴*默认为*计数*
+
 *A.matplotlib——普通直方图*
 ```python
 import matplotlib.pyplot as plt
@@ -21,25 +23,41 @@ plt.show()
 
 ![](https://github.com/sherlcok314159/data_visualization/blob/main/Images/hist.png)
 
-可见*bins*越大，那么**细分的程度越高**，然而细分到一定程度，单个条柱的高度则**易受采样误差的影响**，容易被**噪音干扰**
+*bins*参数指的是柱状图的条数
+
+当 *bins*越大，那么**细分的程度越高**，然而细分到一定程度，单个条柱的高度则**易受采样误差的影响**，容易被**噪音干扰**
 
 所以个人意见是
 
 ***在一定范围内尝试更改bins,保证在精细化的前提不会太容易受到噪音干扰***
 
-*B.sns-displot——带拟合曲线的直方图*
+*B.sns-displot——直方图*
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-sns.displot(d["Total"],kde = True,bins = 50)
-#kde就是拟合曲线的设置
-#bins参数与上面一致
+sns.displot(d["Total"])
 plt.show()
 ```
 
-关于直方图，默认*x轴*为数据，*y轴*默认为*计数*
+```python
+#参数讲解
+kde = True,绘制核密度曲线
+palette = "Greens" or "Blues",调色板
+bins = 50，柱状图条数
+multiple = "dodge",表示并排排列
+默认为"stack",是堆叠柱状图
+shrink = 0.5,各条柱之间呈现一定间距
+有意思的是，这个越小，间距越大
+默认为1，为无间距
+stat = "probability",y轴以概率显示
+默认为频数
+hue = "Gender",这个指的是一列下有至少两个的标签,常规的y=可以用这个替代，但不要忘了x
+默认为无
+height = 4
+aspect = 3,这个为横纵比
+```
 
-**拟合曲线**可以较精确地反映整个直方图的趋势
+**核密度曲线**可以较精确地反映整个直方图的趋势
 
 同样，*sns*绘图自带标签，颜值也高一点，其实，**seaborn**是对**matplotlib**的再次封装

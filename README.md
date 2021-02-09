@@ -13,6 +13,7 @@
   - [直方图](dis/hist.md)
   - [箱线图](dis/box.md)
   - [提琴图](dis/violin.md)
+  - [堆叠柱状图](dis/stack_hist.md)
 
 - 数据关系
 
@@ -20,6 +21,7 @@
   - [散点图](relation/scatter.md)
 
 - 常规处理
+  - [多标签](common/two_labels.md)
   - [两列操作](common/two_columns.md)
 
 **C.专用语言**
