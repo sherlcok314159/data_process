@@ -1,6 +1,8 @@
 ### 散点图
 
 散点图可对**连续**的两个值的**关系**进行可视化
+
+*1.matplotlib*
 ```python
 import matplotlib.pyplot as plt
 from random import randint
@@ -23,6 +25,28 @@ y = [randint(1,100) for i in range(100)]
 plt.scatter(x,y)
 plt.show()
 ```
+
+*2.sns-relplot*
+```python
+d = pd.read_csv("supermarket_sales - Sheet1.csv", parse_dates=["Date"])
+sns.relplot(data = d,x = "Unit price",y = Total)
+#也可以像上面的写成
+sns.relplot(x=d["Unit price"], y=d["Total"])
+plt.show()
+
+#然而，如果不是数据集，而是普通的一些数字，这个会报错，可以换用上一种
+x = [range(1, 100)]
+y = [range(1, 100)]
+sns.relplot(x, y)
+plt.show()
+#ValueError: setting an array element with a sequence.
+```
+
+两者绘图能力相差无几，但**sns-relplot会自动添加x,y标签**，较为方便
+
+**语法复杂度层面前者更简单一点**
+
+总之，这些都是工具，不用太在意优化某一个，不同的工具不同的场合**挑最优**的用就行
 
 *注意*
 
