@@ -1,5 +1,5 @@
 # data_process
-总结数据处理的几个常见步骤
+总结数据处理方面的知识
 
 **A.数据读入**
 
@@ -8,28 +8,27 @@
 
 **B.数据可视化**
 
-*1.数据分布*
+- 数据分布
 
-- [直方图](dis/hist.md)
-- [箱型图](dis/box.md)
-- [提琴图](dis/violin.md)
+  - [直方图](dis/hist.md)
+  - [箱线图](dis/box.md)
+  - [提琴图](dis/violin.md)
 
-*2.数据关系*
+- 数据关系
 
-- [折线图](relation/line.md)
-- [散点图](relation/scatter.md)
+  - [折线图](relation/line.md)
+  - [散点图](relation/scatter.md)
+
+- 常规处理
+  - [两列操作](common/two_columns.md)
 
 **C.专用语言**
 - [numpy](languages/numpy.md)
 
-*3.计数*
+**D.额外须知**
+
 - [计数](Count/count.md)
-
-*5.数据存储*
-- [创建文件夹](store/folder.md)
-
-*6.额外须知*
-
 - [制造标签](extra/labels.md)
 - [字符串格式化](extra/format.md)
 - [正则表达式](extra/re.md)
+- [创建文件夹](store/folder.md)
