@@ -1,8 +1,9 @@
 ### 散点图
+散点图绘图时**必须成对**
 
 散点图可对**连续**的两个值的**关系**进行可视化
 
-*1.matplotlib*
+*A.matplotlib*
 ```python
 import matplotlib.pyplot as plt
 from random import randint
@@ -26,10 +27,18 @@ plt.scatter(x,y)
 plt.show()
 ```
 
-*2.sns-relplot*
+*注意*
+
+*1.* 此处的*x,y*不需要用*numpy*处理，一维列表即可
+
+*2.* 关于参数*marker*，一般默认很好，需要可以去查官方文档
+
+*B.sns-relplot*
 ```python
+import seaborn as sns
 d = pd.read_csv("supermarket_sales - Sheet1.csv", parse_dates=["Date"])
 sns.relplot(data = d,x = "Unit price",y = Total)
+#关于它的kind参数默认为scatter,可以不写
 #也可以像上面的写成
 sns.relplot(x=d["Unit price"], y=d["Total"])
 plt.show()
@@ -42,19 +51,19 @@ plt.show()
 #ValueError: setting an array element with a sequence.
 ```
 
-两者绘图能力相差无几，但**sns-relplot会自动添加x,y标签**，较为方便
+*C.带拟合曲线的散点图*
+```python
+sns.regplot(x=d["Unit price"], y=d["Total"])
+plt.show()
+```
 
-**语法复杂度层面前者更简单一点**
+前两者绘图能力相差无几，但**sns-relplot会自动添加x,y标签**，较为方便
+
+**语法层面前者更简单一点**
+
+最后一个更适合查看连续值之间的关系，**拟合曲线**使数据之间的关系更加明了
 
 总之，这些都是工具，不用太在意优化某一个，不同的工具不同的场合**挑最优**的用就行
-
-*注意*
-
-*1.* 此处的*x,y*不需要用*numpy*处理，一维列表即可
-
-*2.* 关于参数*marker*，一般默认很好，需要可以去查官方文档
-
-*3.* 散点图绘图时**必须成对**，且**数量变多之后就很难看清楚**   
 
 
 **拓展**
