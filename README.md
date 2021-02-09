@@ -16,8 +16,11 @@
 
 *2.数据关系*
 
+- [折线图](relation/line.md)
 - [散点图](relation/scatter.md)
 
+**C.专用语言**
+- [numpy](languages/numpy.md)
 
 *3.计数*
 - [计数](Count/count.md)
