@@ -38,17 +38,19 @@ plt.show()
 import seaborn as sns
 d = pd.read_csv("supermarket_sales - Sheet1.csv", parse_dates=["Date"])
 sns.relplot(data = d,x = "Unit price",y = Total)
+plt.show()
 #关于它的kind参数默认为scatter,可以不写
 #也可以像上面的写成
 sns.relplot(x=d["Unit price"], y=d["Total"])
-plt.show()
-
-#然而，如果不是数据集，而是普通的一些数字，这个会报错，可以换用上一种
-x = [range(1, 100)]
-y = [range(1, 100)]
-sns.relplot(x, y)
-plt.show()
-#ValueError: setting an array element with a sequence.
+#会返回FutureWarning:……
+#所以seaborn还是建议写成第一种格式
+```
+```python
+#如果还是想用第一种，但看到warnings又烦
+#可以选择过滤警告
+import warnings
+warnings.filterwarnings("ignore")
+#原来的代码块
 ```
 
 *C.带拟合曲线的散点图*
