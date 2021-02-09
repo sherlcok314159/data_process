@@ -53,15 +53,23 @@ warnings.filterwarnings("ignore")
 #原来的代码块
 ```
 
+```python
+#需要注意的是，sns绘图不接受二维及以上数组
+x = [range(100)]#shape(1,100)
+y = [range(100)]#shape(1,100)
+sns.relplot(x,y)
+plt.show()
+#ValueError: setting an array element with a sequence.
+```
 *C.带拟合曲线的散点图*
 ```python
 sns.regplot(x=d["Unit price"], y=d["Total"])
 plt.show()
 ```
 
-前两者绘图能力相差无几，但**sns-relplot会自动添加x,y标签**，较为方便
+前两者绘图能力相差无几，但**sns-relplot会自动添加x,y标签**，较为方便,适合配合*pandas*进行处理数据
 
-**语法层面前者更简单一点**
+但*matplotlib绘图* **接受二维及以上数组**，有些时候可以有奇效
 
 最后一个更适合查看连续值之间的关系，**拟合曲线**使数据之间的关系更加明了
 
