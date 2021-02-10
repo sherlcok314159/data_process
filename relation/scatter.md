@@ -37,6 +37,7 @@ plt.show()
 ```python
 import seaborn as sns
 d = pd.read_csv("supermarket_sales - Sheet1.csv", parse_dates=["Date"])
+#需要注意，parse_dates参数是为统一日期设置的，用的时候不能简单设置为True，要具体
 sns.relplot(data = d,x = "Unit price",y = Total)
 plt.show()
 #关于它的kind参数默认为scatter,可以不写
