@@ -11,6 +11,7 @@
 - 数据分布
 
   - [直方图](dis/hist.md)
+  - [Q-Q图](dis/qq.md)
   - [条形图](dis/strip.md)
   - [箱线图](dis/box.md)
   - [提琴图](dis/violin.md)

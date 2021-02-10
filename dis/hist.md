@@ -59,6 +59,23 @@ height = 4
 aspect = 3,这个为横纵比
 ```
 
-**核密度曲线**可以较精确地反映整个直方图的趋势
+**核密度曲线**可以较精确地预测图像的趋势
 
 同样，*sns*绘图自带标签，颜值也高一点，其实，**seaborn**是对**matplotlib**的再次封装
+
+*C.seaborn-distplot直方图拟合曲线以及正态分布曲线*
+
+```python
+from scipy import stats
+import matplotlib.pyplot as plt
+
+sns.distplot(train_data["V0"],fit = stats.norm)
+plt.show()
+```
+因为*distplot*快要被弃用了，所以会出现警告
+可以过滤掉
+
+```python
+import warnings
+warnings.filterwarnings("ignore")
+```
