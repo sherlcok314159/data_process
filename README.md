@@ -12,7 +12,6 @@
 
   - [直方图](dis/hist.md)
   - [Q-Q图](dis/qq.md)
-  - [KDE图](dis/kde.md)
   - [条形图](dis/strip.md)
   - [箱线图](dis/box.md)
   - [提琴图](dis/violin.md)
@@ -21,6 +20,8 @@
 - 数据关系
 
   - [折线图](relation/line.md)
+  - [热力图](relation/heatmap.md)
+  - [KDE图](relation/kde.md)
   - [散点图](relation/scatter.md)
 
 - 常规处理
