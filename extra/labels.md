@@ -22,3 +22,13 @@ for idx,i in enumerate(lis):
 print(dic)
 #{'B': 0, 'C': 1, 'A': 2, 'D': 3}
 ```
+
+*3.*
+
+```python
+print(int(1 == 2))
+#0
+print(int(1 != 2))
+#1
+#True值为1，False值为0
+```
