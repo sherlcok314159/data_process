@@ -26,7 +26,7 @@
   - [两列操作](common/two_columns.md)
 
 - 图片集锦
-  - [花里胡哨](photos.md)
+  - [花里胡哨](pho.md)
 
 **C.专用语言**
 - [numpy](languages/numpy.md)
