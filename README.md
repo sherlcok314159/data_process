@@ -11,6 +11,7 @@
 - 数据分布
 
   - [直方图](dis/hist.md)
+  - [条形图](dis/strip.md)
   - [箱线图](dis/box.md)
   - [提琴图](dis/violin.md)
   - [堆叠柱状图](dis/stack_hist.md)
@@ -23,6 +24,9 @@
 - 常规处理
   - [多标签](common/two_labels.md)
   - [两列操作](common/two_columns.md)
+
+- 图片集锦
+  - [花里胡哨](photos.md)
 
 **C.专用语言**
 - [numpy](languages/numpy.md)

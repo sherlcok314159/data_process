@@ -36,6 +36,7 @@ plt.show()
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+sns.set(style = "darkgrid")
 sns.displot(d["Total"])
 plt.show()
 ```
@@ -52,7 +53,7 @@ shrink = 0.5,各条柱之间呈现一定间距
 默认为1，为无间距
 stat = "probability",y轴以概率显示
 默认为频数
-hue = "Gender",这个指的是一列下有至少两个的标签,常规的y=可以用这个替代，但不要忘了x
+hue = "Gender",这个指的是一列下有至少两个的标签,常规的y=可以用这个替代，但不要忘了x.而且绘制多图时必须要有
 默认为无
 height = 4
 aspect = 3,这个为横纵比

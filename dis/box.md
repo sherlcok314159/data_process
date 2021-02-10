@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 plt.figure(figsize = (4,6))#分配宽度和高度
-sns.boxplot('需要处理的数据',width = 0.5(矩形宽度))#默认是x = data
-plt.xlabel('x轴标签')
-plt.ylabel('y轴标签')
+sns.boxplot('需要处理的数据',width = 0.5(箱子宽度))
 plt.title('总标题')
 plt.show()
+
+#如果X轴标签有很多个，不用改变形式，hue参数也不必设置，直接按照上面的画即可
 ```
 
 ![](https://github.com/sherlcok314159/data_process/blob/main/Images/box.jpg)
