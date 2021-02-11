@@ -9,7 +9,7 @@ import seaborn as sns
 
 df = pd.read_csv("supermarket_sales - Sheet1.csv", parse_dates=["Date"])
 #关于parse，是因为日期格式如1/5/2019，会出现乱码
-df_sub = df[["Total","Date"]].groupby("Date").sum.reset_index()
+df_sub = df[["Total","Date"]].groupby("Date").sum().reset_index()
 print(df_sub.head())
 
         Date      Total
