@@ -19,9 +19,9 @@ plt.show()
 寻找与测试标签最相关的10个特征变量
 ```python
 k = 10
-cols = train_corr.nlarget(k,"target")["target"].index()
+cols = train_corr.nlarget(k,"target")["target"].index
 #第一个target表示与target最相关的，第二个表示target那一列
-#index作用变成索引对象
+#index作用变成索引对象,注意不要尾部加括号
 #Index(['target', 'V0', 'V1', 'V8', 'V27', 'V31', 'V2', 'V4', 'V12', 'V16'], dtype='object')
 plt.subplots(figsize = (10,10))
 sns.heatmap(train_data[cols].corr(),square = True,annot = True)
