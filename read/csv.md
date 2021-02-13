@@ -32,7 +32,10 @@ print(train_data[0:1])
 #为第一个矩阵
 print(train_data[:,0:1]
 #TypeError: '(slice(None, None, None), slice(0, 1, None))' is an invalid key
-train_data["V2"].apply(lambda x : x if x <= 10 else x + 1)
+train_data["V2"] = train_data["V2"].apply(lambda x : x if x <= 10 else x + 1)
+print(train_data["V2"])
 #遍历某列值大于10的+1
+
+#注意，更改了之后要重新赋一个，类似于字符串的操作
 ```
 
