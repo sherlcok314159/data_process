@@ -81,3 +81,6 @@ print(data.loc[:,["label","id"]])
 print(data.iloc[0,0])
 
 #语法与loc相同，唯一不同只是把标签变为了索引，这里不再赘述
+
+#创建新的一列
+data["new"] = data["label"].apply(lambda x:x+1)
