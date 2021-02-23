@@ -365,6 +365,7 @@ print(np.mean(a, axis=0, keepdims=True,dtype = int))
 ```python
 a = np.array([1,2,3])
 b = np.expand_dims(a,axis = 0)
+#b = np.expand_dims(a,-1)与上面等价
 c = np.expand_dims(a,axis = 1)
 print(a.shape)
 print(b.shape)
