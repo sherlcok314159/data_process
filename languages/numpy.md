@@ -358,3 +358,23 @@ print(np.mean(a, axis=0, keepdims=True,dtype = int))
 #[[2 3 4]]
 
 #所有参数用法均与np.sum一样,不多赘述
+
+```
+*20.拓展维度*
+
+```python
+a = np.array([1,2,3])
+b = np.expand_dims(a,axis = 0)
+c = np.expand_dims(a,axis = 1)
+print(a.shape)
+print(b.shape)
+print(c.shape)
+
+------
+(3,)
+(1,3)
+(1,1,3)
+------
+#axis = 0 就是在最外面套一对括号
+#axis = 1 就是把里面的列表当作元素外面套一对括号
+```
