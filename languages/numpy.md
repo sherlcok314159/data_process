@@ -365,17 +365,20 @@ print(np.mean(a, axis=0, keepdims=True,dtype = int))
 ```python
 a = np.array([1,2,3])
 b = np.expand_dims(a,axis = 0)
-#b = np.expand_dims(a,-1)与上面等价
-c = np.expand_dims(a,axis = 1)
+c = np.expand_dims(b,axis = 1)
+d = np.expand_dims(b,-1)
 print(a.shape)
 print(b.shape)
 print(c.shape)
+print(d.shape)
 
 ------
 (3,)
 (1,3)
 (1,1,3)
+(1,3,1)
 ------
-#axis = 0 就是在最外面套一对括号
-#axis = 1 就是把里面的列表当作元素外面套一对括号
+#axis = 0 最左边加一个维度
+#axis = 1 中间加一个维度
+#axis = -1 最右边加一个维度
 ```
